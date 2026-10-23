@@ -1,0 +1,49 @@
+{
+  "Surface": {
+    "Default": "#F9FAFA",
+    "Strong": "#EFF0F0",
+    "Inverse": "#161E15",
+    "Accent": {
+      "Soft": "#074933",
+      "Default": "#23795A",
+      "Strong": "#003322"
+    }
+  },
+  "Content": {
+    "Primary": "#161E15",
+    "Secondary": "#39473A",
+    "Muted": "#6F766F",
+    "Inverse": "#F9FAFA",
+    "Accent": {
+      "Subtle": "#CCF9E4",
+      "Default": "#23795A",
+      "Strong": "#074933"
+    }
+  },
+  "Border": {
+    "Default": "#E4E8E3",
+    "Inverse": "#3E5C50",
+    "Accent": "#23795A"
+  },
+  "Support": {
+    "Yellow": "#FFE9CF",
+    "Green": {
+      "100": "#CCF9E4",
+      "300": "#6FE6BC",
+      "500": "#06956F",
+      "700": "#074D3E"
+    },
+    "Blue": {
+      "100": "#DEEBFB",
+      "300": "#9DC8F3",
+      "500": "#2F5BC6",
+      "700": "#284280"
+    },
+    "Amber": {
+      "100": "#FFEFDB",
+      "300": "#F2A93B",
+      "500": "#AC6C0B",
+      "700": "#563606"
+    }
+  }
+}

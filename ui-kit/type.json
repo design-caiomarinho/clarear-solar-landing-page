@@ -1,0 +1,87 @@
+{
+  "Heading": {
+    "fontFamily": "Sora",
+    "fontWeight": 600,
+    "letterSpacing": "-6%",
+    "Desktop": {
+      "lineHeight": "110%",
+      "H1": { "fontSize": "64px" },
+      "H2": { "fontSize": "48px" },
+      "H3": { "fontSize": "32px" },
+      "H4": { "fontSize": "24px" }
+    },
+    "Mobile": {
+      "lineHeight": "100%",
+      "H1": { "fontSize": "48px" },
+      "H2": { "fontSize": "36px" },
+      "H3": { "fontSize": "24px" },
+      "H4": { "fontSize": "20px" }
+    }
+  },
+  "Body": {
+    "platforms": ["Desktop", "Mobile"],
+    "fontFamily": "Sora",
+    "lineHeight": "150%",
+    "letterSpacing": "-6%",
+    "Large": {
+      "fontSize": "16px",
+      "Regular": { "fontWeight": 400 },
+      "Semibold": { "fontWeight": 600 }
+    },
+    "Medium": {
+      "fontSize": "14px",
+      "Regular": { "fontWeight": 400 },
+      "Semibold": { "fontWeight": 600 }
+    },
+    "Small": {
+      "fontSize": "12px",
+      "Regular": { "fontWeight": 400 },
+      "Semibold": { "fontWeight": 600 }
+    }
+  },
+  "Label": {
+    "platforms": ["Desktop", "Mobile"],
+    "letterSpacing": "0%",
+    "Large": {
+      "fontFamily": "Sora",
+      "fontSize": "18px",
+      "lineHeight": "100%",
+      "Semibold": { "fontWeight": 600 }
+    },
+    "Medium": {
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "lineHeight": "100%",
+      "Semibold": { "fontWeight": 600 }
+    },
+    "Small": {
+      "fontFamily": "Sora",
+      "fontSize": "14px",
+      "lineHeight": "100%",
+      "Semibold": { "fontWeight": 600 }
+    },
+    "Input": {
+      "fontFamily": "Sora",
+      "fontSize": "14px",
+      "lineHeight": "100%",
+      "Regular": { "fontWeight": 400 }
+    },
+    "Amount": {
+      "fontFamily": "Sora",
+      "fontSize": "36px",
+      "lineHeight": "125%",
+      "Regular": { "fontWeight": 400 },
+      "Semibold": { "fontWeight": 600 }
+    }
+  },
+  "Overline": {
+    "platforms": ["Desktop", "Mobile"],
+    "Small": {
+      "fontFamily": "Sora",
+      "fontSize": "12px",
+      "lineHeight": "100%",
+      "letterSpacing": "0%",
+      "Semibold": { "fontWeight": 600 }
+    }
+  }
+}

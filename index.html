@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clarear | Energia Solar</title>
+  <meta name="description" content="Simule quanto você economiza com energia solar. Projeto e instalação para casas, comércios e propriedades rurais, com cada número explicado antes do contrato.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Clarear Energia Solar">
+  <meta property="og:title" content="Clarear | Energia Solar">
+  <meta property="og:description" content="Simule quanto você economiza com energia solar. Projeto e instalação para casas, comércios e propriedades rurais, com cada número explicado antes do contrato.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Galpão rural com painéis solares no telhado, cercado por pomar">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <script>
+    document.documentElement.classList.add("js");
+    // A página sempre abre no início: sem restaurar a rolagem e sem manter o #seção do endereço
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Sora:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <svg class="icon-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <symbol id="icon-arrow-down" viewBox="0 0 24 24"><path d="M12 5V19"/><path d="M18 13L12 19"/><path d="M6 13L12 19"/></symbol>
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24"><path d="M17 7L7 17"/><path d="M8 7H17V16"/></symbol>
+    <symbol id="icon-calculator" viewBox="0 0 24 24"><path d="M4 5C4 4.46957 4.21071 3.96086 4.58579 3.58579C4.96086 3.21071 5.46957 3 6 3H18C18.5304 3 19.0391 3.21071 19.4142 3.58579C19.7893 3.96086 20 4.46957 20 5V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V5Z"/><path d="M8 8C8 7.73478 8.10536 7.48043 8.29289 7.29289C8.48043 7.10536 8.73478 7 9 7H15C15.2652 7 15.5196 7.10536 15.7071 7.29289C15.8946 7.48043 16 7.73478 16 8V9C16 9.26522 15.8946 9.51957 15.7071 9.70711C15.5196 9.89464 15.2652 10 15 10H9C8.73478 10 8.48043 9.89464 8.29289 9.70711C8.10536 9.51957 8 9.26522 8 9V8Z"/><path d="M8 14V14.01"/><path d="M12 14V14.01"/><path d="M16 14V14.01"/><path d="M8 17V17.01"/><path d="M12 17V17.01"/><path d="M16 17V17.01"/></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path d="M6 9L12 15L18 9"/></symbol>
+    <symbol id="icon-file-text" viewBox="0 0 24 24"><path d="M14 3V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H19"/><path d="M17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H14L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21Z"/><path d="M9 9H10"/><path d="M9 13H15"/><path d="M9 17H15"/></symbol>
+    <symbol id="icon-heart-check" viewBox="0 0 24 24"><path d="M19.5 12.572L16.5 15.5M11 19C8.83443 16.8562 6.66776 14.7136 4.5 12.572C4.00531 12.0906 3.61564 11.512 3.35555 10.8726C3.09545 10.2333 2.97056 9.54695 2.98874 8.85693C3.00691 8.16692 3.16776 7.48814 3.46116 6.86334C3.75455 6.23854 4.17414 5.68125 4.69349 5.22658C5.21284 4.77191 5.82071 4.42969 6.47881 4.22148C7.13692 4.01327 7.83101 3.94358 8.51737 4.0168C9.20373 4.09002 9.8675 4.30456 10.4669 4.64691C11.0663 4.98926 11.5882 5.452 12 6.006C12.4135 5.45602 12.9361 4.99732 13.5351 4.65861C14.1341 4.31989 14.7965 4.10845 15.4809 4.03752C16.1654 3.96659 16.8571 4.0377 17.5128 4.24639C18.1685 4.45509 18.774 4.79687 19.2916 5.25036C19.8091 5.70385 20.2274 6.25928 20.5204 6.88189C20.8134 7.5045 20.9747 8.18088 20.9943 8.86871C21.0139 9.55653 20.8913 10.241 20.6341 10.8793C20.377 11.5175 19.9909 12.0958 19.5 12.578"/><path d="M15 19L17 21L21 17"/></symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="M5 12H3L12 3L21 12H19"/><path d="M5 12V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V12"/><path d="M9 21V15C9 14.4696 9.21071 13.9609 9.58579 13.5858C9.96086 13.2107 10.4696 13 11 13H13C13.5304 13 14.0391 13.2107 14.4142 13.5858C14.7893 13.9609 15 14.4696 15 15V21"/></symbol>
+    <symbol id="icon-solar-panel" viewBox="0 0 24 24"><path d="M8 2C8 3.06087 8.42143 4.07828 9.17157 4.82843C9.92172 5.57857 10.9391 6 12 6C13.0609 6 14.0783 5.57857 14.8284 4.82843C15.5786 4.07828 16 3.06087 16 2"/><path d="M4 3H5"/><path d="M19 3H20"/><path d="M12 9V10"/><path d="M17.2 7.2L17.907 7.907"/><path d="M6.8 7.2L6.1 7.9"/><path d="M4.28 21H19.72C19.872 21 20.022 20.9653 20.1586 20.8987C20.2952 20.832 20.4148 20.735 20.5083 20.6152C20.6019 20.4954 20.6668 20.3558 20.6983 20.2071C20.7298 20.0584 20.7269 19.9044 20.69 19.757L19.19 13.757C19.1358 13.5408 19.011 13.3488 18.8352 13.2117C18.6595 13.0745 18.4429 13 18.22 13H5.78C5.55707 13 5.34054 13.0745 5.16479 13.2117C4.98905 13.3488 4.86417 13.5408 4.81 13.757L3.31 19.757C3.27306 19.9044 3.27023 20.0584 3.3017 20.2071C3.33318 20.3558 3.39815 20.4954 3.49167 20.6152C3.58518 20.735 3.70479 20.832 3.84139 20.8987C3.97799 20.9653 4.12799 21 4.28 21Z"/><path d="M4 17H20"/><path d="M10 13L9 21"/><path d="M14 13L15 21"/></symbol>
+    <symbol id="icon-truck" viewBox="0 0 24 24"><path d="M5 17C5 17.5304 5.21071 18.0391 5.58579 18.4142C5.96086 18.7893 6.46957 19 7 19C7.53043 19 8.03914 18.7893 8.41421 18.4142C8.78929 18.0391 9 17.5304 9 17C9 16.4696 8.78929 15.9609 8.41421 15.5858C8.03914 15.2107 7.53043 15 7 15C6.46957 15 5.96086 15.2107 5.58579 15.5858C5.21071 15.9609 5 16.4696 5 17Z"/><path d="M15 17C15 17.5304 15.2107 18.0391 15.5858 18.4142C15.9609 18.7893 16.4696 19 17 19C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17C19 16.4696 18.7893 15.9609 18.4142 15.5858C18.0391 15.2107 17.5304 15 17 15C16.4696 15 15.9609 15.2107 15.5858 15.5858C15.2107 15.9609 15 16.4696 15 17Z"/><path d="M5 17H3V6C3 5.73478 3.10536 5.48043 3.29289 5.29289C3.48043 5.10536 3.73478 5 4 5H13V6M13 6V11M19 17H21V11L18 6H13M13 11V17M13 11H21M13 17H9M13 17H15"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M3 21L4.65 17.2C3.38766 15.4081 2.82267 13.217 3.06104 11.0381C3.29942 8.85918 4.32479 6.84214 5.94471 5.36552C7.56463 3.8889 9.66775 3.05421 11.8594 3.0181C14.051 2.98198 16.1805 3.74693 17.8482 5.16937C19.5159 6.59182 20.6071 8.57398 20.9172 10.7439C21.2272 12.9138 20.7347 15.1222 19.5321 16.9548C18.3295 18.7873 16.4994 20.118 14.3854 20.6971C12.2713 21.2762 10.0186 21.0639 8.05 20.1L3 21Z"/><path d="M9 10C9 10.1326 9.05268 10.2598 9.14645 10.3536C9.24021 10.4473 9.36739 10.5 9.5 10.5C9.63261 10.5 9.75979 10.4473 9.85355 10.3536C9.94732 10.2598 10 10.1326 10 10V9C10 8.86739 9.94732 8.74021 9.85355 8.64645C9.75979 8.55268 9.63261 8.5 9.5 8.5C9.36739 8.5 9.24021 8.55268 9.14645 8.64645C9.05268 8.74021 9 8.86739 9 9V10ZM9 10C9 11.3261 9.52678 12.5979 10.4645 13.5355C11.4021 14.4732 12.6739 15 14 15M14 15H15C15.1326 15 15.2598 14.9473 15.3536 14.8536C15.4473 14.7598 15.5 14.6326 15.5 14.5C15.5 14.3674 15.4473 14.2402 15.3536 14.1464C15.2598 14.0527 15.1326 14 15 14H14C13.8674 14 13.7402 14.0527 13.6464 14.1464C13.5527 14.2402 13.5 14.3674 13.5 14.5C13.5 14.6326 13.5527 14.7598 13.6464 14.8536C13.7402 14.9473 13.8674 15 14 15Z"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6H20"/><path d="M4 12H20"/><path d="M4 18H20"/></symbol>
+    <symbol id="icon-trend-down" viewBox="0 0 40 40"><path d="M20 8.33333V31.6667"/><path d="M30 21.6667L20 31.6667"/><path d="M10 21.6667L20 31.6667"/></symbol>
+  </svg>
+
+  <header class="navbar navbar-dark">
+    <a class="navbar-logo" href="./" aria-label="Clarear Energia Solar: recarregar a página">
+      <span class="navbar-logo-mark">
+        <img class="navbar-logo-mark-dark" src="assets/logo-mark.svg" alt="" width="54" height="31">
+        <img class="navbar-logo-mark-light" src="assets/logo-mark-light.svg" alt="" width="54" height="31">
+      </span>
+      <span class="navbar-logo-text">
+        <span class="navbar-logo-name">Clarear</span>
+        <span class="navbar-logo-tagline">ENERGIA SOLAR</span>
+      </span>
+    </a>
+
+    <button class="navbar-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbar-itens">
+      <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path class="icon-menu-top" d="M4 6H20"/><path class="icon-menu-middle" d="M4 12H20"/><path class="icon-menu-bottom" d="M4 18H20"/></svg>
+    </button>
+
+    <nav class="navbar-itens" id="navbar-itens" aria-label="Principal">
+      <a class="navbar-item text-link label-small-semibold" href="#sobre">SOBRE</a>
+      <a class="navbar-item text-link label-small-semibold" href="#solucoes">SOLUÇÕES</a>
+      <a class="navbar-item text-link label-small-semibold" href="#simular">SIMULAR</a>
+      <a class="navbar-item text-link label-small-semibold" href="#como-funciona"><span class="navbar-label-desktop">COMO FUNCIONA</span><span class="navbar-label-menu">GARANTIA</span></a>
+      <div class="navbar-button button-group">
+        <a class="button button-secondary label-small-semibold" href="#">FALAR NO WHATSAPP</a>
+        <a class="button-icon button-secondary" href="#" aria-label="WhatsApp">
+          <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+  <section class="hero" data-theme="dark">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title heading-h1">Energia solar com a conta às claras</h1>
+
+        <ul class="hero-benefits">
+          <li class="hero-benefit body-large-regular">
+            <svg class="icon" aria-hidden="true"><use href="#icon-home"/></svg>
+            Visita técnica gratuita
+          </li>
+          <li class="hero-benefit body-large-regular">
+            <svg class="icon" aria-hidden="true"><use href="#icon-calculator"/></svg>
+            Simulação em 30 segundos, sem cadastro
+          </li>
+          <li class="hero-benefit body-large-regular">
+            <svg class="icon" aria-hidden="true"><use href="#icon-heart-check"/></svg>
+            Geração mínima garantida em contrato
+          </li>
+        </ul>
+
+        <div class="hero-cta">
+          <p class="hero-text body-medium-regular">
+            Projetamos e instalamos energia solar para casas, comércios e propriedades rurais, com cada número explicado antes de qualquer contrato.
+          </p>
+          <div class="hero-button button-group">
+            <a class="button button-secondary label-small-semibold" href="#simular">SIMULAR ECONOMIA</a>
+            <a class="button-icon button-secondary" href="#simular" aria-label="Ir para a simulação">
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-down"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-image">
+          <div class="hero-photo parallax" data-parallax>
+            <img class="parallax-image" src="assets/hero-1600.webp" srcset="assets/hero-800.webp 800w, assets/hero-1600.webp 1600w, assets/hero-2400.webp 2400w" sizes="(max-width: 1210px) 100vw, 50vw" alt="" width="2400" height="1792" fetchpriority="high" decoding="async">
+          </div>
+          <article class="hero-card" data-hero="reveal">
+            <span class="hero-card-tag overline-small-semibold" data-hero="reveal">EXEMPLO SIMULADO</span>
+
+            <div class="hero-card-content">
+              <div class="hero-card-stat" data-hero="reveal">
+                <svg class="icon icon-trend-down" aria-hidden="true"><use href="#icon-trend-down"/></svg>
+                <span class="heading-h3" data-hero="percent">89%</span>
+              </div>
+              <p class="body-medium-regular" data-hero="reveal">
+                <strong class="body-medium-semibold">Padaria no Nordeste:</strong>
+                economia mensal na conta de luz com energia solar.
+              </p>
+            </div>
+
+            <div class="hero-card-bars">
+              <div class="hero-card-bar hero-card-before" data-hero="fade">
+                <span class="hero-card-label body-small-semibold" data-hero="reveal">Antes</span>
+                <span class="hero-card-value body-medium-semibold" data-hero="rise"><span data-hero="reveal">R$ 1.800</span></span>
+              </div>
+              <div class="hero-card-bar hero-card-after" data-hero="fade">
+                <span class="hero-card-label body-small-semibold" data-hero="reveal">Depois</span>
+                <span class="hero-card-value body-medium-semibold" data-hero="rise"><span data-hero="reveal">R$ 205</span></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre" data-theme="light">
+    <div class="sobre-container">
+      <div class="sobre-content">
+        <div class="sobre-header" data-motion>
+          <p class="sobre-overline overline-small-semibold">SOBRE A CLAREAR</p>
+          <h2 class="sobre-title heading-h2">Energia do sol, sem letras miúdas</h2>
+        </div>
+
+        <div class="sobre-numbers" data-motion data-motion-delay="0.1">
+          <p class="sobre-numbers-title overline-small-semibold">NÚMEROS</p>
+          <ul class="sobre-numbers-list">
+            <li class="sobre-number body-large-regular">
+              <svg class="icon" aria-hidden="true"><use href="#icon-home"/></svg>
+              8 anos de mercado
+            </li>
+            <li class="sobre-number body-large-regular">
+              <svg class="icon" aria-hidden="true"><use href="#icon-calculator"/></svg>
+              +1.200 sistemas instalados
+            </li>
+            <li class="sobre-number body-large-regular">
+              <svg class="icon" aria-hidden="true"><use href="#icon-heart-check"/></svg>
+              46 cidades atendidas
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sobre-image parallax" data-parallax>
+        <img class="parallax-image" src="assets/sobre-1600.webp" srcset="assets/sobre-800.webp 800w, assets/sobre-1600.webp 1600w, assets/sobre-1856.webp 1856w" sizes="(max-width: 1210px) 100vw, 568px" alt="Instaladores colocando um painel solar em um telhado" width="1856" height="2304" loading="lazy" decoding="async">
+      </div>
+
+      <div class="sobre-text" data-motion>
+        <h3 class="sobre-text-title heading-h3">Instalamos como se fosse na nossa casa</h3>
+        <p class="sobre-text-description body-medium-regular">
+          Nascemos para tirar a desconfiança do caminho de quem quer gerar a própria energia. Mostramos o que cai na conta, o que continua e quanto tempo o investimento leva para voltar, antes de qualquer contrato.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="solucoes" id="solucoes" data-theme="light">
+    <div class="solucoes-container">
+      <div class="solucoes-header" data-motion>
+        <div class="solucoes-header-title">
+          <p class="solucoes-overline overline-small-semibold">SOLUÇÕES</p>
+          <h2 class="solucoes-title heading-h2">Energia solar para cada tipo de conta</h2>
+        </div>
+        <p class="solucoes-description body-large-regular">Cada imóvel consome energia de um jeito. Por isso o projeto começa pela sua conta e pela sua rotina, não por um kit pronto.</p>
+      </div>
+
+      <div class="solucoes-cards">
+        <article class="solucoes-card" data-motion>
+          <div class="solucoes-illustration solucoes-residencial">
+            <span class="solucoes-line solucoes-line-1"><span class="solucoes-stroke"><img src="assets/solucoes-residencial.svg" alt=""></span></span>
+          </div>
+          <div class="solucoes-card-content">
+            <h3 class="solucoes-card-title heading-h4">Residencial</h3>
+            <p class="solucoes-card-text body-medium-regular">Para casas que querem conta menor e menos susto nos reajustes. Dimensionamos o sistema pelo consumo da família e pelo espaço do telhado.</p>
+          </div>
+        </article>
+        <article class="solucoes-card" data-motion data-motion-delay="0.1">
+          <div class="solucoes-illustration solucoes-comercial">
+            <span class="solucoes-line solucoes-line-1"><span class="solucoes-stroke"><img src="assets/solucoes-comercial.svg" alt=""></span></span>
+          </div>
+          <div class="solucoes-card-content">
+            <h3 class="solucoes-card-title heading-h4">Comercial</h3>
+            <p class="solucoes-card-text body-medium-regular">Para comércios em que a conta de luz pesa no caixa todo mês. Aproveitamos o consumo diurno, que coincide com as horas de mais geração.</p>
+          </div>
+        </article>
+        <article class="solucoes-card" data-motion data-motion-delay="0.2">
+          <div class="solucoes-illustration solucoes-rural">
+            <span class="solucoes-line solucoes-line-1"><span class="solucoes-stroke"><img src="assets/solucoes-rural-1.svg" alt=""></span></span>
+            <span class="solucoes-line solucoes-line-2"><span class="solucoes-stroke"><img src="assets/solucoes-rural-2.svg" alt=""></span></span>
+            <span class="solucoes-line solucoes-line-3"><span class="solucoes-stroke"><img src="assets/solucoes-rural-3.svg" alt=""></span></span>
+            <span class="solucoes-line solucoes-line-4"><span class="solucoes-stroke"><img src="assets/solucoes-rural-4.svg" alt=""></span></span>
+          </div>
+          <div class="solucoes-card-content">
+            <h3 class="solucoes-card-title heading-h4">Rural</h3>
+            <p class="solucoes-card-text body-medium-regular">Para propriedades com irrigação, bombas e câmaras de frio. Projetamos para telhados de galpão ou estruturas instaladas direto no solo.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="simulador" id="simular" data-theme="light">
+    <div class="simulador-container">
+      <div class="simulador-header" data-motion>
+        <div class="simulador-header-title">
+          <p class="simulador-overline overline-small-semibold">SIMULADOR</p>
+          <h2 class="simulador-title heading-h2">Quanto o sol corta da sua conta de luz ?</h2>
+        </div>
+        <p class="simulador-description body-large-regular">Veja quanto a sua conta pode cair, quantas placas você precisaria e em quanto tempo o investimento volta.</p>
+      </div>
+
+      <div class="simulador-body">
+        <form class="simulador-form" onsubmit="return false" data-motion data-motion-delay="0.1">
+          <div class="simulador-bill">
+            <h3 class="simulador-bill-title heading-h3">Quanto você paga de luz por mês?</h3>
+            <label class="simulador-bill-amount" for="simulador-conta-valor">
+              <span class="simulador-bill-currency label-amount-regular">R$</span>
+              <input class="simulador-bill-value label-amount-semibold" id="simulador-conta-valor" type="text" inputmode="numeric" autocomplete="off" value="450" aria-label="Valor da conta de luz por mês, em reais">
+            </label>
+            <input class="simulador-slider" id="simulador-conta" name="conta" aria-label="Valor da conta de luz por mês" type="range" min="80" max="3000" step="10" value="450" style="--progress: 0.1267">
+          </div>
+
+          <div class="simulador-fields">
+            <div class="simulador-field">
+              <label class="simulador-field-label body-medium-regular" for="simulador-estado">Onde fica o imóvel?</label>
+              <div class="simulador-select">
+                <select class="simulador-select-input label-input-regular" id="simulador-estado" name="estado">
+                  <option value="" selected>Selecione o estado</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+                <svg class="icon simulador-select-icon" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+              </div>
+            </div>
+
+            <div class="simulador-field">
+              <span class="simulador-field-label body-medium-regular" id="simulador-tipo-label">Tipo de imóvel</span>
+              <div class="simulador-options" role="group" aria-labelledby="simulador-tipo-label">
+                <button class="simulador-option button button-outline label-small-semibold" type="button" data-tipo="casa" aria-pressed="true">Casa</button>
+                <button class="simulador-option button button-outline label-small-semibold" type="button" data-tipo="comercio" aria-pressed="false">Comércio</button>
+                <button class="simulador-option button button-outline label-small-semibold" type="button" data-tipo="rural" aria-pressed="false">Rural</button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="simulador-result" aria-live="polite" data-motion data-motion-delay="0.2">
+          <div class="simulador-saving">
+            <p class="simulador-saving-label body-large-regular">Você economizaria por mês</p>
+            <div class="simulador-saving-content">
+              <p class="simulador-saving-value heading-h2" data-field="economia">R$ 312 - 347</p>
+              <p class="simulador-saving-percent body-medium-regular" data-field="percentual">até 77% menos na conta de luz.</p>
+            </div>
+          </div>
+
+          <div class="simulador-summary">
+            <div class="simulador-chart">
+              <div class="simulador-chart-bar">
+                <span class="simulador-chart-label body-medium-semibold">Hoje</span>
+                <span class="simulador-chart-value simulador-chart-before body-medium-semibold" data-field="conta-hoje">R$ 450</span>
+              </div>
+              <div class="simulador-chart-bar">
+                <span class="simulador-chart-label body-medium-semibold">Com solar</span>
+                <span class="simulador-chart-value simulador-chart-after body-medium-semibold" data-field="conta-solar">R$ 103</span>
+              </div>
+            </div>
+
+            <div class="simulador-details">
+              <dl class="simulador-details-list">
+                <div class="simulador-detail">
+                  <dt class="simulador-detail-label body-large-regular">Sistema</dt>
+                  <dd class="simulador-detail-value body-large-semibold" data-field="sistema">6 placas</dd>
+                </div>
+                <div class="simulador-detail">
+                  <dt class="simulador-detail-label body-large-regular">Investimento</dt>
+                  <dd class="simulador-detail-value body-large-semibold" data-field="investimento">R$ 11,1 mil a 15,7 mil</dd>
+                </div>
+                <div class="simulador-detail">
+                  <dt class="simulador-detail-label body-large-regular">Retorno</dt>
+                  <dd class="simulador-detail-value body-large-semibold" data-field="retorno">2,5 a 3,5 anos</dd>
+                </div>
+              </dl>
+              <p class="simulador-note body-small-regular" data-field="aviso" hidden></p>
+              <div class="simulador-button button-group">
+                <a class="button button-secondary label-small-semibold" href="#" data-field="proposta">RECEBER PROPOSTA</a>
+                <a class="button-icon button-secondary" href="#" aria-label="WhatsApp" data-field="whatsapp">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="garantia" id="como-funciona" data-theme="light">
+    <div class="garantia-container">
+      <div class="garantia-header" data-motion>
+        <div class="garantia-header-title">
+          <p class="garantia-overline overline-small-semibold">GARANTIA</p>
+          <h2 class="garantia-title heading-h2">Do número à energia no seu telhado</h2>
+        </div>
+        <p class="garantia-description body-large-regular">Cuidamos de cada etapa, da visita técnica à aprovação na distribuidora, e avisamos você a cada passo.</p>
+      </div>
+
+      <div class="garantia-content">
+        <div class="garantia-cards">
+          <article class="garantia-card" data-motion>
+            <div class="garantia-card-icon garantia-card-icon-amber">
+              <svg class="icon" aria-hidden="true"><use href="#icon-truck"/></svg>
+            </div>
+            <div class="garantia-card-content">
+              <h3 class="garantia-card-title heading-h4">Visita técnica gratuita</h3>
+              <p class="garantia-card-text body-large-regular">Confirmamos telhado, sombra e padrão de entrada. Agendada em até 3 dias úteis.</p>
+            </div>
+          </article>
+          <article class="garantia-card" data-motion data-motion-delay="0.1">
+            <div class="garantia-card-icon garantia-card-icon-blue">
+              <svg class="icon" aria-hidden="true"><use href="#icon-file-text"/></svg>
+            </div>
+            <div class="garantia-card-content">
+              <h3 class="garantia-card-title heading-h4">Aprovação na distribuidora</h3>
+              <p class="garantia-card-text body-large-regular">Cuidamos da papelada e avisamos cada etapa. Prazo típico: 30 a 60 dias.</p>
+            </div>
+          </article>
+          <article class="garantia-card" data-motion data-motion-delay="0.2">
+            <div class="garantia-card-icon garantia-card-icon-green">
+              <svg class="icon" aria-hidden="true"><use href="#icon-solar-panel"/></svg>
+            </div>
+            <div class="garantia-card-content">
+              <h3 class="garantia-card-title heading-h4">Instalação e acompanhamento</h3>
+              <p class="garantia-card-text body-large-regular">Instalação em 1 a 3 dias para casas e pequenos comércios, e app para ver quanto você gera.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="garantia-image parallax" data-parallax>
+          <img class="parallax-image" src="assets/garantia-1600.webp" srcset="assets/garantia-800.webp 800w, assets/garantia-1600.webp 1600w, assets/garantia-2400.webp 2400w" sizes="(min-width: 1600px) 1504px, 100vw" alt="Galpão rural com painéis solares no telhado, cercado por pomar" width="2752" height="1536" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" data-theme="dark">
+    <div class="cta-photo parallax" data-parallax>
+      <img class="parallax-image" src="assets/cta-1600.webp" srcset="assets/cta-1600.webp 1600w, assets/cta-2400.webp 2400w" sizes="(max-width: 640px) 300vw, 100vw" alt="" width="2752" height="1536" loading="lazy" decoding="async">
+    </div>
+    <div class="cta-container">
+      <div class="cta-header" data-motion>
+        <p class="cta-overline overline-small-semibold">PRÓXIMOS PASSOS</p>
+        <h2 class="cta-title heading-h2">Gere a sua própria energia</h2>
+      </div>
+
+      <div class="cta-content">
+        <div class="cta-card" data-motion data-motion-delay="0.1">
+          <div class="cta-card-header">
+            <img class="cta-card-logo" src="assets/cta-logo.svg" alt="" width="63" height="36">
+            <p class="cta-card-title heading-h4">Economia na<br>conta de luz</p>
+          </div>
+          <div class="cta-card-stat">
+            <span class="cta-card-stat-value heading-h3" data-count-from="100">80%</span>
+            <span class="cta-card-stat-text body-medium-regular">menos na conta do 1º ano.</span>
+          </div>
+        </div>
+
+        <div class="cta-action" data-motion data-motion-delay="0.2">
+          <p class="cta-action-text heading-h3">Fale com um especialista e receba uma proposta sem compromisso.</p>
+          <div class="cta-button button-group">
+            <a class="button button-secondary label-small-semibold" href="#">FALAR COM ESPECIALISTA</a>
+            <a class="button-icon button-secondary" href="#" aria-label="WhatsApp">
+              <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer" data-theme="dark">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-header" data-motion>
+          <p class="footer-overline overline-small-semibold">FALE CONOSCO</p>
+          <h2 class="footer-title heading-h2">Quer instalar energia solar, <span class="footer-title-muted">tirar uma dúvida ou só entender melhor os números?</span></h2>
+        </div>
+
+        <div class="footer-links" data-motion data-motion-delay="0.1">
+          <div class="footer-contact">
+            <p class="footer-contact-title body-large-regular">Fale com a Clarear:</p>
+            <div class="footer-contact-itens">
+              <a class="footer-contact-item text-link label-large-semibold" href="#">WHATSAPP <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a>
+              <a class="footer-contact-item text-link label-large-semibold" href="#">E-MAIL <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+
+          <nav class="footer-itens" aria-label="Rodapé">
+            <a class="footer-item text-link label-large-semibold" href="#sobre">SOBRE</a>
+            <a class="footer-item text-link label-large-semibold" href="#solucoes">SOLUÇÕES</a>
+            <a class="footer-item text-link label-large-semibold" href="#simular">SIMULAR</a>
+            <a class="footer-item text-link label-large-semibold" href="#como-funciona">COMO FUNCIONA</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom" data-motion>
+        <img class="footer-logo" src="assets/footer-logo.svg" alt="" width="1344" height="279">
+        <div class="footer-legal">
+          <p class="footer-copyright body-medium-regular">© 2026 Clarear Energia Solar</p>
+          <div class="footer-legal-itens">
+            <a class="footer-legal-item text-link label-small-semibold" href="#">INSTAGRAM</a>
+            <a class="footer-legal-item text-link label-small-semibold" href="#">TIKTOK</a>
+            <a class="footer-legal-item text-link label-small-semibold" href="#">POLÍTICA DE PRIVACIDADE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/vendor/motion.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/hero-card.js"></script>
+  <script src="js/count.js"></script>
+  <script src="js/simulador-config.js"></script>
+  <script src="js/simulador-calculo.js"></script>
+  <script src="js/simulador.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* UI Kit — tokens de cor e tipografia. Fonte: ui-kit/colors.json e ui-kit/type.json */
+
+
+:root {
+  /* ---------- Cores: Surface ---------- */
+  --surface-default: #f9fafa;
+  --surface-strong: #eff0f0;
+  --surface-inverse: #161e15;
+  --surface-accent-soft: #074933;
+  --surface-accent-default: #23795a;
+  --surface-accent-strong: #003322;
+  --surface-action-primary-hover: #55b28b;
+  --surface-disabled: #eeeeec;
+
+  /* ---------- Cores: Content ---------- */
+  --content-primary: #161e15;
+  --content-secondary: #39473a;
+  --content-muted: #6f766f;
+  --content-inverse: #f9fafa;
+  --content-accent-subtle: #ccf9e4;
+  --content-accent-default: #23795a;
+  --content-accent-strong: #074933;
+  --content-disabled: #d4d6d1;
+
+  /* ---------- Cores: Border ---------- */
+  --border-default: #e4e8e3;
+  --border-inverse: #3e5c50;
+  --border-accent: #23795a;
+  --border-focus: #55b28b;
+  --border-disabled: #eeeeec;
+
+  /* ---------- Cores: Support ---------- */
+  --support-yellow: #ffe9cf;
+
+  --support-green-100: #ccf9e4;
+  --support-green-300: #6fe6bc;
+  --support-green-500: #06956f;
+  --support-green-700: #074d3e;
+
+  --support-blue-100: #deebfb;
+  --support-blue-300: #9dc8f3;
+  --support-blue-500: #2f5bc6;
+  --support-blue-700: #284280;
+
+  --support-amber-100: #ffefdb;
+  --support-amber-300: #f2a93b;
+  --support-amber-500: #ac6c0b;
+  --support-amber-700: #563606;
+
+  /* ---------- Tipografia: famílias ---------- */
+  --font-sora: "Sora", system-ui, sans-serif;
+  --font-inter: "Inter", system-ui, sans-serif;
+
+  /* ---------- Tipografia: Heading (desktop) ---------- */
+  --heading-line-height: 1.1;
+  --heading-letter-spacing: -0.06em;
+  --heading-h1-size: 64px;
+  --heading-h2-size: 48px;
+  --heading-h3-size: 32px;
+  --heading-h4-size: 24px;
+
+  /* ---------- Tipografia: Body ---------- */
+  --body-line-height: 1.5;
+  --body-letter-spacing: -0.06em;
+  --body-large-size: 16px;
+  --body-medium-size: 14px;
+  --body-small-size: 12px;
+}
+
+/* Heading (mobile) */
+@media (max-width: 640px) {
+  :root {
+    --heading-h1-size: 48px;
+    --heading-h2-size: 36px;
+    --heading-h3-size: 24px;
+    --heading-h4-size: 20px;
+  }
+}
+
+/* ===== Classes de texto (1:1 com os text styles do Figma) ===== */
+
+/* Heading — Sora 600 */
+.heading-h1, .heading-h2, .heading-h3, .heading-h4 {
+  font-family: var(--font-sora);
+  font-weight: 600;
+  line-height: var(--heading-line-height);
+  line-height: round(1.1em, 1px); /* pixel inteiro: evita posições fracionárias (texto e ícones borrados) */
+  letter-spacing: var(--heading-letter-spacing);
+}
+.heading-h1 { font-size: var(--heading-h1-size); }
+.heading-h2 { font-size: var(--heading-h2-size); }
+.heading-h3 { font-size: var(--heading-h3-size); }
+.heading-h4 { font-size: var(--heading-h4-size); }
+
+/* Body — Sora, regular 400 / semibold 600 */
+.body-large-regular, .body-large-semibold,
+.body-medium-regular, .body-medium-semibold,
+.body-small-regular, .body-small-semibold {
+  font-family: var(--font-sora);
+  line-height: var(--body-line-height);
+  letter-spacing: var(--body-letter-spacing);
+}
+.body-large-regular   { font-size: var(--body-large-size);  font-weight: 400; }
+.body-large-semibold  { font-size: var(--body-large-size);  font-weight: 600; }
+.body-medium-regular  { font-size: var(--body-medium-size); font-weight: 400; }
+.body-medium-semibold { font-size: var(--body-medium-size); font-weight: 600; }
+.body-small-regular   { font-size: var(--body-small-size);  font-weight: 400; }
+.body-small-semibold  { font-size: var(--body-small-size);  font-weight: 600; }
+
+/* Label — letter-spacing 0 */
+.label-large-semibold  { font: 600 18px/1 var(--font-sora);  letter-spacing: 0; }
+.label-medium-semibold { font: 600 16px/1 var(--font-inter); letter-spacing: 0; } /* Inter, conforme o kit */
+.label-small-semibold  { font: 600 14px/1 var(--font-sora);  letter-spacing: 0; }
+.label-input-regular   { font: 400 14px/1 var(--font-sora);  letter-spacing: 0; }
+.label-amount-regular  { font: 400 36px/1.25 var(--font-sora); letter-spacing: 0; }
+.label-amount-semibold { font: 600 36px/1.25 var(--font-sora); letter-spacing: 0; }
+
+/* Overline */
+.overline-small-semibold { font: 600 12px/1 var(--font-sora); letter-spacing: 0; }

@@ -1,0 +1,14 @@
+{
+  "name": "clarear-energia-solar",
+  "private": true,
+  "description": "Landing page Clarear Energia Solar (HTML, CSS e JS puro)",
+  "scripts": {
+    "dev": "npx serve -l 5173 .",
+    "test": "node --test tests/simulador-calculo.test.js",
+    "build": "node build.mjs",
+    "preview": "npx serve -l 5175 dist"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
